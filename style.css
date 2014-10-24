@@ -49,7 +49,7 @@ div.circle {
 }
 
 div.circle i.icon-down {
-	line-height: 1em;
+	line-height: 1.3em;
 	margin-left: -5px;
 	-webkit-transition: ease 0.5s;
     -moz-transition: ease 0.5s;
@@ -58,7 +58,7 @@ div.circle i.icon-down {
 }
 
 div.circle:hover i.icon-down {
-	line-height: 1.7em;
+	line-height: 1.5em;
 	color: #00FFC0;
 }
 
