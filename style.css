@@ -1,0 +1,122 @@
+* {
+	/* Disable selecting globally */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+	/*background-color: #000;*/
+}
+
+div.container {
+	/*width: 600px;
+	height: 600px;
+	border: 1px solid #FFF;*/
+	z-index: 100;
+	margin: auto;
+	color: #FFF;
+	text-align: center;
+	margin-top: 1em;
+}
+
+div.container h1 {
+	font-size: 4em;
+	margin: 0;
+}
+div.container h2 {
+	font-size: 5em;
+	margin: 0;
+}
+div.container h3 {
+	font-size: 2.9em;
+	margin: 0;
+}
+
+div.circle {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	max-height: 200px;
+	font-size: 150px;
+	border-radius: 150px;
+	border: 10px solid #FFF;
+	-webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+    overflow: hidden;
+
+}
+
+div.circle i.icon-down {
+	line-height: 1em;
+	margin-left: -5px;
+	-webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+div.circle:hover i.icon-down {
+	line-height: 1.7em;
+	color: #00FFC0;
+}
+
+div.circle:hover {
+	border-color: #00FFC0;
+	cursor: pointer;
+}
+
+div.social-container {
+	margin-top: 30px;
+	color: #FFF;
+	font-size: 47px;
+}
+
+div.social-container a {
+	color: #FFF;
+	-webkit-transition: ease 0.5s;
+    -moz-transition: ease 0.5s;
+    -o-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+
+div.social-container a:hover {
+	color: #00FFC0;
+}
+
+video {
+	display: block;
+}
+
+video#bgvid {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	/* placeholder image */
+	background-color: #000;
+	background: url(assets/sjor.png) no-repeat;
+	background-size: cover;
+}
+
+/*
+	Disable video on mobile 
+		=> Autoplay not possible on iOS
+*/
+@media screen and (max-device-width: 800px) {
+	html {
+		background: url(assets/sjor.png) #000 no-repeat center center fixed;
+	}
+	video#bgvid {
+		display: none;
+	}
+}
