@@ -39,7 +39,8 @@ div.container h5 {
 	margin: 0;
 }
 
-div.circle {
+a.circle {
+	display: block;
 	margin: auto;
 	width: 200px;
 	height: 200px;
@@ -55,7 +56,8 @@ div.circle {
 
 }
 
-div.circle i.icon-down {
+a.circle i.icon-down {
+	color: #FFF;
 	line-height: 1.3em;
 	margin-left: -5px;
 	-webkit-transition: ease 0.5s;
@@ -64,12 +66,12 @@ div.circle i.icon-down {
     transition: ease 0.5s;
 }
 
-div.circle:hover i.icon-down {
+a.circle:hover i.icon-down {
 	line-height: 1.5em;
 	color: #00FFC0;
 }
 
-div.circle:hover {
+a.circle:hover {
 	border-color: #00FFC0;
 	cursor: pointer;
 }
